@@ -1,0 +1,244 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url(game1.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: hidden;
+	width: 100%;
+	min-height: 100vh;
+}
+
+.btn{
+  margin: -7px 95%; 
+  position: absolute;
+}
+  
+.card {
+    width: 490px;
+    height: 554px;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px 20px;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    margin-top: 85px;
+  }
+  
+  .card__content {
+    background: rgb(5, 6, 45);
+    border-radius: 17px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .steam{
+    font-size: 30px;
+    position: absolute;
+    margin: 20px 20px;
+    color: #00DDEB;
+  }
+
+  .main-profile{
+    height: 20px;
+    width: 420px;
+    position: absolute;
+    margin: 70px 20px;
+    border-radius: 15px;
+    background: none;
+    border-color: #00DDEB;
+    border-style: solid;
+    border-width: 4px;
+    transition: .5s;
+    color: #ffffff;
+    padding: 1.5rem;
+    font-size: 20px;
+  }
+
+  .username:focus{
+    background-color: rgb(3, 3, 28);
+    box-shadow: 5px 5px 20px #5B42F3;
+  }
+
+  .bait-profile{
+    height: 20px;
+    width: 420px;
+    position: absolute;
+    margin: 150px 20px;
+    border-radius: 15px;
+    background: none;
+    border-color: #00DDEB;
+    border-style: solid;
+    border-width: 4px;
+    transition: .5s;
+    color: #ffffff;
+    padding: 1.5rem;
+    font-size: 20px;
+  }
+
+  .password:focus{
+    background-color: rgb(3, 3, 28);
+    box-shadow: 5px 5px 20px #5B42F3;
+  }
+
+  .line{
+    font-size: 50px;
+    position: absolute;
+    margin: 200px 95px;
+    color: #00DDEB;
+  }
+ 
+  .credit{
+    font-size: 30px;
+    position: absolute;
+    margin: 270px 20px;
+    color: #00DDEB;
+  }
+
+  .card-number{
+    height: 20px;
+    width: 420px;
+    position: absolute;
+    margin: 420px 30px;
+    border-radius: 15px;
+    background: none;
+    border-color: #00DDEB;
+    border-style: solid;
+    border-width: 4px;
+    transition: .5s;
+    color: #ffffff;
+    padding: 1.5rem;
+    font-size: 20px;
+  }
+
+  .cvv{
+    height: 20px;
+    width: 220px;
+    position: absolute;
+    margin: 350px 250px;
+    border-radius: 15px;
+    background: none;
+    border-color: #00DDEB;
+    border-style: solid;
+    border-width: 4px;
+    transition: .5s;
+    color: #ffffff;
+    padding: 1.5rem;
+    font-size: 20px;
+  }
+
+  .date{
+    height: 20px;
+    width: 220px;
+    position: absolute;
+    margin: 350px 10px;
+    border-radius: 15px;
+    background: none;
+    border-color: #00DDEB;
+    border-style: solid;
+    border-width: 4px;
+    transition: .5s;
+    color: #ffffff;
+    padding: 1.5rem;
+    font-size: 20px;
+  }
+
+  .date:focus{
+    scale: 1.1;
+    background-color: rgb(3, 3, 28);
+    box-shadow: 5px 5px 20px #5B42F3;
+  }
+
+  button{
+    position: absolute;
+    background-color: #00dbeb00;
+    border: 2px solid #008c96;
+    color: #ffffff;
+    padding: .5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    transition: .5s;
+  }
+
+  .home{
+    margin: 490px 10px ;
+    border-radius: 5px;
+  }
+
+  .update{
+    margin: 490px 395px ;
+    border-radius: 5px;
+  }
+
+
+  @media (min-width:2800px) and (max-width:3000px) {
+     .card{
+      scale: 1.8;
+      margin-top: 360px;
+     }
+  
+}
+
+@media (min-width:2500px) and (max-width:2799px) {
+  .card{
+    scale: 1.8;
+    margin-top: 360px;
+   }
+
+}
+
+
+@media (max-width:2499px) {
+  .card{
+    scale: 1.8;
+    margin-top: 360px;
+   }
+
+}
+
+@media (max-width:2000px) {
+
+  .card{
+    scale: 1.3;
+    margin-top: 160px;
+   }
+    
+}
+
+@media (max-width:1600px) {
+
+  .card{
+    scale: 1;
+    margin-top: 80px;
+   }
+
+}
+
+@media (max-width:1200px) {
+.btn{
+  margin: -7px 93%;
+}
+.card{
+  margin-top: 60px;
+}
+}
+
+@media (max-width:940px) {
+  .btn{
+    margin: -7px 90%;
+  }
+  }
+
+  @media (max-width:630px) {
+    .btn{
+      margin: -7px 87%;
+    }
+    }
+
+
+  

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="skinport-settings.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>SKINPORT</title>
+</head>
+<body>
+    <div class="alert alert-success" role="alert" style="width: 100%; position: absolute;">
+        <!-- <button class="x"><i class='bx bx-x'></i></button> -->
+        <button type="button" class="btn btn-outline-success" ><i class='bx bx-x'></i></button>
+        Updated Successfully!
+    </div>
+
+    <div class="card">
+        <div class="card__content">
+            <p class="steam">[S̲̅][t̲̅][e̲̅][a̲̅][m̲̅]</p>
+
+            <input type="number" id="main-profile" name="main-profile" class="main-profile" placeholder="MAIN PROFILE..." required >
+            <input type="number" id="bait-profile" name="bait-profile" class="bait-profile" placeholder="BAIT PROFILE..." required  >
+
+            <p class="line">____________</p>
+
+            <p class="credit">[C̲̅][r̲̅][e̲̅][d̲̅][i̲̅][t̲̅]</p>
+
+            <input type="number" id="card-number" name="card-number" class="card-number" placeholder="CARD NUMBER.." required >
+            <input type="number" id="cvv" name="cvv" class="cvv" placeholder="CVV.." required >
+            <input type="text" id="date" name="date" class="date" placeholder="DATE.." required  >
+            <button class="update">Update</button>
+            <button class="home">Home</button>
+
+        </div>
+   </div>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+<script>
+
+    let start_button = document.getElementsByClassName("start-button")[0];
+    let pause_button = document.getElementsByClassName("pause-button")[0];
+
+    start_button.addEventListener('click', function(){
+        toggle(start_button, pause_button);
+    });
+
+    pause_button.addEventListener('click', function(){
+        toggle(pause_button, start_button);
+    });
+
+    function toggle(toggleOffButton, toggleOnButton){
+        toggleOffButton.style.display="none";
+        toggleOnButton.style.display="block";
+    }
+</script>
+</html>
